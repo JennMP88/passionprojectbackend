@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const admin = require('./firebase');
+// const admin = require('./firebase');
 
 
 //define routes
-const clothesRouter = require('./routes/clothes');
+const commentsRouter = require('./routes /comments');
 
 
 
@@ -19,8 +19,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-//routes
-app.use('/user',userRoutes)
+// routes
+app.use('/comment',commentsRouter)
 
 
 
@@ -30,12 +30,11 @@ app.use((err, req, res, next) => {
 
 
 // -------- ROUTES
-app.get('/', (req, res) => {
+app.get('/comment', (req, res) => {
   res.json('Hello world');
 })
 
-app.post('/', clothesRouter)
-
+app.use('/comment', commentsRouter); 
 
 
 
