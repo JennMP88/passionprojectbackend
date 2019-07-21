@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = 8080;
 const bodyParser = require('body-parser');
 const cors = require('cors');
 // const admin = require('./firebase');
@@ -36,6 +37,8 @@ app.get('/comment', (req, res) => {
 
 app.use('/comment', commentsRouter); 
 
-
+app.listen(port, ()=>{
+  console.log(`listening at port ${port}`)
+} )
 
 module.exports={app}
