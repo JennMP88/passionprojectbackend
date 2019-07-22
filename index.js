@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const admin = require('./firebase');
 const commentsRouter = require('./routes /comments');
+const storiesRouter = require('./routes /stories');
 
 
 // -------- MIDDLEWARE
@@ -35,6 +36,7 @@ const checkFirebaseToken = (req, res, next) => {
 
 // routes
 app.use('/comment',commentsRouter)
+app.use('/stories',storiesRouter)
 
 
 
