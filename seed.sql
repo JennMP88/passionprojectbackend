@@ -26,9 +26,9 @@ INSERT INTO users (username) VALUES ('Luke');
 INSERT INTO users (username) VALUES ('Marco');
 
 --INSERT STORY 
-  INSERT INTO stories (stories_displayed, user_id) VALUES ('i applied to Google, filled out a coding challenge and cursed a lady out on my way to my interview, next thing i knew, the same lady i cursed out was the person who interviewed me. we all know how that ended',1);
-  INSERT INTO stories (stories_displayed, user_id) VALUES ('just got rejected by Google',1);
-  INSERT INTO stories (stories_displayed, user_id) VALUES ('Left a job on hold while i negotiated a salary and next thing i knew they hired some one else',2);
+  INSERT INTO stories (stories_displayed, user_id) VALUES ('prayer 1',1);
+  INSERT INTO stories (stories_displayed, user_id) VALUES ('prayer 2',1);
+  INSERT INTO stories (stories_displayed, user_id) VALUES ('prayer 3',2);
 
 --INSERT COMMENT
 INSERT INTO comments (comment_body, user_id) VALUES ('do not worry be happy',1);

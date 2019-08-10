@@ -8,8 +8,8 @@ StoriesServices.create = (stories_displayed,user_id) => {
 }
 
 //Get all stories
-StoriesServices.renderpics= () => {
-  const sql = `SELECT stories_displayed 
+StoriesServices.renderstories= () => {
+  const sql = `SELECT *  
   FROM stories `
   return db.any(sql, {});
 }
