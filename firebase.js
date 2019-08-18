@@ -1,10 +1,8 @@
-// var admin = require("firebase-admin");
+var admin = require("firebase-admin");
 
-// var serviceAccount = require("./firebase_key.json");
+var serviceAccount = require("./firebase_key.json");
 
-// admin.initializeApp({
-//   credential: admin.credential.cert(serviceAccount),
-//   databaseURL: "https://mypassionproject-db093.firebaseio.com"
-// });
-
-// module.exports = admin;
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://mypassionproject-db093.firebaseio.com"
+});
